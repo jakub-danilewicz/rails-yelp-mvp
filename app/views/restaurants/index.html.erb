@@ -1,0 +1,16 @@
+<br>
+<h1>Restaurant List</h1>
+<br>
+<div class="restaurant-grid">
+  <% @restaurants.each do |restaurant| %>
+    <div class="restaurant-card">
+      <%= link_to restaurant_path(restaurant), class: "custom-link" do %>
+        <h3><%= restaurant.name %></h3>
+      <% end %>
+    </div>
+  <% end %>
+
+  <%= link_to new_restaurant_path, class: "restaurant-card custom-link" do %>
+    <h3>Add new restaurant</h3>
+  <% end %>
+</div>

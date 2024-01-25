@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.restaurant-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-link {
+  text-decoration: none; /* Remove underline */
+  color: #000000; /* Change link color to your preferred color */
+}
+
+.custom-link:hover {
+  color: #ff0000; /* Change link color on hover */
+}
